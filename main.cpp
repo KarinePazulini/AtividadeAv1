@@ -20,6 +20,7 @@ int main() {
       for(int linha=0;linha<4;linha++){
         for(int coluna=0;coluna<8;coluna++){
           if(termo[t] == letras[linha][coluna]){
+            tecla = coluna+2;
             cout << "#" << tecla << "=" << qtde << endl;
           }
         }
