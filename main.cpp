@@ -17,11 +17,11 @@ int main() {
 
   for(int t = 0; t < size(termo); t++){
     if(size(termo) > 50){
-      cout << "Inválido"  << endl;
+      cout << "Termo inválido, tente novamente" << endl;
       break;
     }else{
-      for(int linha=0;linha<4;linha++){
-        for(int coluna=0;coluna<8;coluna++){
+      for(int linha = 0; linha < 4; linha++){
+        for(int coluna = 0; coluna < 8; coluna++){
           if(termo[t] == letras[linha][coluna]){
             tecla = coluna+2; qtde = linha+1;
             cout << "#" << tecla << "=" << qtde << endl;
